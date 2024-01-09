@@ -1,7 +1,12 @@
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { WagmiProvider } from 'wagmi';
-import { config } from '../wagmi';
-import Layout from '../components/Layout';
+// import dynamic from "next/dynamic";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+// const WagmiProvider = dynamic(
+//   import("wagmi").then((mod) => mod.WagmiProvider),
+//   { ssr: false }
+// );
+import { WagmiProvider } from "wagmi";
+import { config } from "../wagmi";
+import Layout from "../components/Layout";
 
 const queryClient = new QueryClient();
 
